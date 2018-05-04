@@ -1,0 +1,9 @@
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\bin\Debug\platformgame.exe.config
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\bin\Debug\platformgame.exe
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\bin\Debug\platformgame.pdb
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\obj\Debug\platformgame.csprojResolveAssemblyReference.cache
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\obj\Debug\platformgame.Form1.resources
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\obj\Debug\platformgame.Properties.Resources.resources
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\obj\Debug\platformgame.csproj.GenerateResource.Cache
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\obj\Debug\platformgame.exe
+C:\Users\diego\Desktop\Pro 4\platformgame\platformgame\obj\Debug\platformgame.pdb
