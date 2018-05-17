@@ -1,0 +1,9 @@
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\bin\Debug\Side scroller.exe.config
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\bin\Debug\Side scroller.exe
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\bin\Debug\Side scroller.pdb
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\obj\Debug\Side scroller.csprojResolveAssemblyReference.cache
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\obj\Debug\Side_scroller.Form1.resources
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\obj\Debug\Side_scroller.Properties.Resources.resources
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\obj\Debug\Side scroller.csproj.GenerateResource.Cache
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\obj\Debug\Side scroller.exe
+C:\Users\diego\Desktop\Pro 4\Side scroller\Side scroller\obj\Debug\Side scroller.pdb

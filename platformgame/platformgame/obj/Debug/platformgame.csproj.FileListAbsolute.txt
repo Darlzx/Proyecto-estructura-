@@ -16,3 +16,6 @@ C:\Users\David\Documents\Proyecto-estructura-\platformgame\platformgame\obj\Debu
 C:\Users\David\Documents\Proyecto-estructura-\platformgame\platformgame\obj\Debug\platformgame.Form1.resources
 C:\Users\David\Documents\Proyecto-estructura-\platformgame\platformgame\obj\Debug\platformgame.Properties.Resources.resources
 C:\Users\David\Documents\Proyecto-estructura-\platformgame\platformgame\obj\Debug\platformgame.csproj.GenerateResource.Cache
+C:\Users\diego\Documents\Proyecto-estructura-\platformgame\platformgame\bin\Debug\platformgame.exe.config
+C:\Users\diego\Documents\Proyecto-estructura-\platformgame\platformgame\obj\Debug\platformgame.exe
+C:\Users\diego\Documents\Proyecto-estructura-\platformgame\platformgame\obj\Debug\platformgame.pdb
