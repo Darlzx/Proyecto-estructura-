@@ -12,6 +12,8 @@ namespace Side_scroller
 {
     public partial class Form1 : Form
     {
+        System.Media.SoundPlayer sp = new System.Media.SoundPlayer(@"C:\Users\diego\Documents\Proyecto-estructura-\ost.wav");
+        
         bool goleft = false; //valor booleano que controla el movimiento a la izquierda
         bool goright = false; // valor booleano que controla el mivimiento a la derecha
         bool jumping = false; // control booleano para verificar si el jugador esta saltando o no
@@ -25,6 +27,7 @@ namespace Side_scroller
         int backleft = 8; //velocidad de movimiento del fondo de pantalla
         public Form1()
         {
+            sp.PlayLooping();
 
             InitializeComponent();
         }
@@ -55,25 +58,25 @@ namespace Side_scroller
             else
             {
                 //si no es asi cambiamos la velocidad de salto a 12
-                jummpspeed = 12;
+                jummpspeed = 8;
             }
 
             //si el valor de goleft es verdadero y el espacio a la izquierda del jugador
             //es mas de 100 pixeles solo entonces el jugador se movera a la izquierda
-            if (goleft && player.Left > 100)
+            if (goleft && player.Left > 1)
             {
                 player.Left -= playspeed;
             }
 
             //si goright es verdadero el jugador se mueve a la derecha 
-            if (goright && player.Left + (player.Width + 100) < this.ClientSize.Width)
+            if (goright && player.Left + (player.Width + 1) < this.ClientSize.Width)
             {
                 player.Left += playspeed;
             }
 
-            // si el valor de goright y el el resto de la imagen de fondo es mayor que 1532
+            // si el valor de goright y el el resto de la imagen de fondo es mayor que 1200
             //entonces movemos el fondo hacia la izquierda
-            if (goright && background.Left > -1353)
+            if (goright && background.Left > -900)
             {
                 background.Left -= backleft;
 
@@ -81,7 +84,7 @@ namespace Side_scroller
                 //cuando las encuentre las movera a la izquierda 
                 foreach(Control x in this.Controls)
                 {
-                    if (x is PictureBox && x.Tag == "platform" || x is PictureBox && x.Tag == "coin" || x is PictureBox && x.Tag == "door" || x is PictureBox && x.Tag == "key")
+                    if (x is PictureBox && x.Tag == "platform" || x is PictureBox && x.Tag == "coin" || x is PictureBox && x.Tag == "door" || x is PictureBox && x.Tag == "key" )
                     {
                         x.Left -= backleft;
                     }
@@ -126,6 +129,7 @@ namespace Side_scroller
                     {
                         this.Controls.Remove(x);// con esto eliminamos la moneda
                         score++;//se suma uno al puntaje
+                        
                     }
                 }
             }
@@ -136,7 +140,13 @@ namespace Side_scroller
                 door.Image = Properties.Resources.door_open;
                 // y se detiene el timer
                 gameTimer.Stop();
-                MessageBox.Show("Completaste el juego!!!! y su puntaje final fue de: "+score);// mostrar mensaje
+                MessageBox.Show("Completaste el juego!!!! y su puntaje final fue de: "+score+"Sigamos al siguiente nivel ");// mostrar mensaje
+                
+                Form2 frm2 = new Form2();
+                this.Hide();
+                frm2.ShowDialog();
+
+                this.Close();
             }
 
             if (player.Bounds.IntersectsWith(key.Bounds))
@@ -149,8 +159,8 @@ namespace Side_scroller
             if (player.Top + player.Height > this.ClientSize.Height + 60)
             {
                 gameTimer.Stop();
-                MessageBox.Show("tostaste sos malo ");
-                this.Refresh();
+                MessageBox.Show("tostaste sos malo ");                
+                
             }
             
         }
