@@ -63,13 +63,13 @@ namespace Side_scroller
 
             //si el valor de goleft es verdadero y el espacio a la izquierda del jugador
             //es mas de 100 pixeles solo entonces el jugador se movera a la izquierda
-            if (goleft && player.Left > 1)
+            if (goleft && player.Left > 25)
             {
                 player.Left -= playspeed;
             }
 
             //si goright es verdadero el jugador se mueve a la derecha 
-            if (goright && player.Left + (player.Width + 1) < this.ClientSize.Width)
+            if (goright && player.Left + (player.Width + 25) < this.ClientSize.Width)
             {
                 player.Left += playspeed;
             }
@@ -129,6 +129,7 @@ namespace Side_scroller
                     {
                         this.Controls.Remove(x);// con esto eliminamos la moneda
                         score++;//se suma uno al puntaje
+                        puntos.Text = Convert.ToString(score);
                         
                     }
                 }
@@ -159,8 +160,8 @@ namespace Side_scroller
             if (player.Top + player.Height > this.ClientSize.Height + 60)
             {
                 gameTimer.Stop();
-                MessageBox.Show("tostaste sos malo ");                
-                
+                MessageBox.Show("tostaste sos malo ");
+                Application.Restart();
             }
             
         }

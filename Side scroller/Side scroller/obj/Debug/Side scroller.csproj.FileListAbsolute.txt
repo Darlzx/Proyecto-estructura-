@@ -17,3 +17,5 @@ C:\Users\diego\Documents\Proyecto-estructura-\Side scroller\Side scroller\obj\De
 C:\Users\diego\Documents\Proyecto-estructura-\Side scroller\Side scroller\obj\Debug\Side_scroller.Properties.Resources.resources
 C:\Users\diego\Documents\Proyecto-estructura-\Side scroller\Side scroller\obj\Debug\Side scroller.csproj.GenerateResource.Cache
 C:\Users\diego\Documents\Proyecto-estructura-\Side scroller\Side scroller\obj\Debug\Side_scroller.Form2.resources
+C:\Users\diego\Documents\Proyecto-estructura-\Side scroller\Side scroller\obj\Debug\Side_scroller.Menu.resources
+C:\Users\diego\Documents\Proyecto-estructura-\Side scroller\Side scroller\obj\Debug\Side_scroller.Form3.resources
